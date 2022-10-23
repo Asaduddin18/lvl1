@@ -5,23 +5,23 @@ let homeContent = "";
 let projectContent = "";
 let registrationContent="";
 
-fs.readFile("home.html", (err, home) => {
-  if (err) {
-    throw err;
+fs.readFile("home.html", (er, home) => {
+  if (er) {
+    throw er;
   }
   homeContent = home;
 });
 
-fs.readFile("project.html", (err, project) => {
-  if (err) {
-    throw err;
+fs.readFile("project.html", (er, project) => {
+  if (er) {
+    throw er;
   }
   projectContent = project;
 });
 
-fs.readFile("registration.html",(err,reg) => {
-  if (err){
-    throw err;
+fs.readFile("registration.html",(er,reg) => {
+  if (er){
+    throw er;
   }
   registrationContent=reg;
 });
